@@ -1,4 +1,4 @@
-module github.com/yumaojun03/dmidecode
+module github.com/0x1un/dmidecode
 
 go 1.12
 

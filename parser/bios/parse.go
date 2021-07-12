@@ -1,7 +1,7 @@
 package bios
 
 import (
-	"github.com/yumaojun03/dmidecode/smbios"
+	"github.com/0x1un/dmidecode/smbios"
 )
 
 // Parse 参考 https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_3.1.1.pdf

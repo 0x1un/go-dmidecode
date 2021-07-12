@@ -1,7 +1,7 @@
 package battery
 
 import (
-	"github.com/yumaojun03/dmidecode/smbios"
+	"github.com/0x1un/dmidecode/smbios"
 )
 
 // Parse 解析電池信息
