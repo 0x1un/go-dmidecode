@@ -88,7 +88,7 @@ type Decoder struct {
 	memoryDevice           []*smbios.Structure
 	systemSlots            []*smbios.Structure
 	portableBattery        []*smbios.Structure
-	powerSupply                  []*smbios.Structure
+	powerSupply            []*smbios.Structure
 }
 
 // Debug 开关Debug
@@ -385,5 +385,8 @@ func (d *Decoder) ALL() (*InformationSet, error) {
 	errs.checkOrAdd(err)
 	sets.addBattery(batteryInfos)
 
+	powerInfos, err := d.PowerSupply()
+	errs.checkOrAdd(err)
+	sets.addPower(powerInfos)
 	return sets, errs.Error()
 }
