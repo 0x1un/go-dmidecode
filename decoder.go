@@ -2,6 +2,7 @@ package dmidecode
 
 import (
 	"fmt"
+	"github.com/0x1un/dmidecode/parser/power"
 
 	"github.com/0x1un/dmidecode/parser/baseboard"
 	"github.com/0x1un/dmidecode/parser/battery"
@@ -58,6 +59,8 @@ func New() (*Decoder, error) {
 			d.systemSlots = append(d.systemSlots, ss[i])
 		case smbios.PortableBattery:
 			d.portableBattery = append(d.portableBattery, ss[i])
+		case smbios.PowerSupply:
+			d.powerSupply = append(d.powerSupply, ss[i])
 		default:
 		}
 	}
@@ -85,6 +88,7 @@ type Decoder struct {
 	memoryDevice           []*smbios.Structure
 	systemSlots            []*smbios.Structure
 	portableBattery        []*smbios.Structure
+	powerSupply                  []*smbios.Structure
 }
 
 // Debug 开关Debug
@@ -292,6 +296,19 @@ func (d *Decoder) Battery() ([]*battery.Information, error) {
 	for i := range d.portableBattery {
 		d.println(d.portableBattery[i])
 		info, err := battery.Parse(d.portableBattery[i])
+		if err != nil {
+			return nil, err
+		}
+		infos = append(infos, info)
+	}
+	return infos, nil
+}
+
+func (d *Decoder) PowerSupply() ([]*power.Information, error) {
+	infos := make([]*power.Information, 0, len(d.powerSupply))
+	for i := range d.powerSupply {
+		d.println(d.powerSupply[i])
+		info, err := power.Parse(d.powerSupply[i])
 		if err != nil {
 			return nil, err
 		}
