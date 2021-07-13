@@ -9,7 +9,7 @@
 
 功能和命令行的dmidecode工具一样, 使用方式参考: [example](./example/main.go)
 
-开发过程相关小博客: [使用Golang重新实现dmidecode](https://www.jianshu.com/p/2e7ce2946b6b)
+参照[DSP0134_3.1.1.pdf]进行解析
 
 ## 安装方式
 
@@ -52,6 +52,7 @@ func main() {
 	// dmi.ProcessorCache()
 	// dmi.Slot()
 	// dmi.System()
+	// dmi.Power()
 	checkError(err)
 
 	for i := range infos {
@@ -62,5 +63,5 @@ func main() {
 
 ## CLI 使用
 ``` sh
-$ go run cmd/main.go -d -t [bios, system, baseboard, chassis, onboard, port, processor, memory, slot]
+$ go run cmd/main.go -d -t [bios, system, baseboard, chassis, onboard, port, processor, memory, slot, power]
 ```
