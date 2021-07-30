@@ -1,7 +1,7 @@
 package chassis
 
 import (
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/smbios"
 )
 
 // Parse 解析底座信息

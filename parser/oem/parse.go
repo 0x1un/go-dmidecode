@@ -1,6 +1,6 @@
 package oem
 
-import "github.com/0x1un/dmidecode/smbios"
+import "github.com/0x1un/go-dmidecode/smbios"
 
 // Parse 解析smbios struct数据
 func Parse(s *smbios.Structure) (info *OEM, err error) {

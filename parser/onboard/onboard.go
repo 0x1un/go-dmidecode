@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/smbios"
 )
 
 // Information 设备信息 (smbios < 2.6)

@@ -1,7 +1,7 @@
 package processor
 
 import (
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/smbios"
 )
 
 // ParseProcessor 处理器

@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/0x1un/dmidecode/parser/oem"
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/parser/oem"
+	"github.com/0x1un/go-dmidecode/smbios"
 )
 
 // *smbios.Structure: Header: Type: 11, Length: 5, Handle: 44, Data: [2] Strings: [[MS_VM_CERT/SHA1/27d66596a61c48dd3dc7216fd715126e33f59ae7] Welcome to the Virtual Machine]

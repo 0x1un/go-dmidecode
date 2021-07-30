@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/smbios"
 )
 
 var (

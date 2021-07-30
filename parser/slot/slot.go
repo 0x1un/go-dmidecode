@@ -3,7 +3,7 @@ package slot
 import (
 	"fmt"
 
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/smbios"
 )
 
 // SystemSlot todo

@@ -3,7 +3,7 @@ package chassis
 import (
 	"fmt"
 
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/smbios"
 )
 
 // Information 底座信息

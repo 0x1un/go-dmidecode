@@ -1,7 +1,7 @@
 package power
 
 import (
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/smbios"
 	"strings"
 )
 

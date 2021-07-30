@@ -2,20 +2,20 @@ package dmidecode
 
 import (
 	"fmt"
-	"github.com/0x1un/dmidecode/parser/power"
+	"github.com/0x1un/go-dmidecode/parser/power"
 
-	"github.com/0x1un/dmidecode/parser/baseboard"
-	"github.com/0x1un/dmidecode/parser/battery"
-	"github.com/0x1un/dmidecode/parser/bios"
-	"github.com/0x1un/dmidecode/parser/chassis"
-	"github.com/0x1un/dmidecode/parser/memory"
-	"github.com/0x1un/dmidecode/parser/oem"
-	"github.com/0x1un/dmidecode/parser/onboard"
-	"github.com/0x1un/dmidecode/parser/port"
-	"github.com/0x1un/dmidecode/parser/processor"
-	"github.com/0x1un/dmidecode/parser/slot"
-	"github.com/0x1un/dmidecode/parser/system"
-	"github.com/0x1un/dmidecode/smbios"
+	"github.com/0x1un/go-dmidecode/parser/baseboard"
+	"github.com/0x1un/go-dmidecode/parser/battery"
+	"github.com/0x1un/go-dmidecode/parser/bios"
+	"github.com/0x1un/go-dmidecode/parser/chassis"
+	"github.com/0x1un/go-dmidecode/parser/memory"
+	"github.com/0x1un/go-dmidecode/parser/oem"
+	"github.com/0x1un/go-dmidecode/parser/onboard"
+	"github.com/0x1un/go-dmidecode/parser/port"
+	"github.com/0x1un/go-dmidecode/parser/processor"
+	"github.com/0x1un/go-dmidecode/parser/slot"
+	"github.com/0x1un/go-dmidecode/parser/system"
+	"github.com/0x1un/go-dmidecode/smbios"
 )
 
 // New 实例化
