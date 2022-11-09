@@ -168,7 +168,12 @@ func (s *Structure) GetString(offset int) string {
 	if index == 0 {
 		return "Unknown"
 	}
-
+	if index < 0 {
+		return "Unknown"
+	}
+	if int(index) > len(s.Strings) {
+		return "Unknown"
+	}
 	return s.Strings[index-1]
 }
 
